@@ -1,0 +1,511 @@
+{
+  "feira": {
+    "original": {
+      "file": "media/feira-original.webp",
+      "sha256": "5b9e73a6623de9f6907ae1e5a2f1805db2ba7cc503db4611e04285a8dc69043e",
+      "bytes": 46288,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,w_960/1280px-Pastel_de_Feira_02",
+      "mime": "image/webp"
+    },
+    "card": {
+      "file": "media/feira-card.webp",
+      "sha256": "85711253e5bde4bd6b7bc59c962924ef8e86347fe07bc2404be6748f92955d3d",
+      "bytes": 24966,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_518/1280px-Pastel_de_Feira_02",
+      "mime": "image/webp"
+    },
+    "treated": {
+      "file": "media/feira-treated.webp",
+      "sha256": "001f5ac197bac5e256f5df4d93db34b1e90d86029c6164faf89aad041c67a580",
+      "bytes": 42532,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/1280px-Pastel_de_Feira_02",
+      "mime": "image/webp"
+    }
+  },
+  "ibirapuera": {
+    "original": {
+      "file": "media/ibirapuera-original.jpg",
+      "sha256": "9c3198374dd7250fd6298dc30fe14321bbb632014f757752485d4ceedd125b43",
+      "bytes": 203937,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,w_960/1280px-Ibirapuera_Park_in_S_C3_A3o_Paulo",
+      "mime": "image/jpeg"
+    },
+    "card": {
+      "file": "media/ibirapuera-card.jpg",
+      "sha256": "af4fcd4f9dda283a9a188779c4376e065040e4e027e529ee418da443522e272d",
+      "bytes": 144581,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_518/1280px-Ibirapuera_Park_in_S_C3_A3o_Paulo",
+      "mime": "image/jpeg"
+    },
+    "treated": {
+      "file": "media/ibirapuera-treated.jpg",
+      "sha256": "d20c161976dcd4e459b09957432d60cfe2b5fa9bcb324982cdb8a1262bd06876",
+      "bytes": 237729,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/1280px-Ibirapuera_Park_in_S_C3_A3o_Paulo",
+      "mime": "image/jpeg"
+    }
+  },
+  "minhocao": {
+    "original": {
+      "file": "media/minhocao-original.webp",
+      "sha256": "4cb942280f5105671c9e56fb77b32e9b24e79c9dd0574cc229693948d521eb6a",
+      "bytes": 350130,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,w_960/1280px-Graffitti_no_Minhoc_C3_A3o_04",
+      "mime": "image/webp"
+    },
+    "card": {
+      "file": "media/minhocao-card.webp",
+      "sha256": "eed9b4bd6d6d778d3298fbfe090c105ae3bce2bcbea3e73d3c862ac0253f8934",
+      "bytes": 82788,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_518/1280px-Graffitti_no_Minhoc_C3_A3o_04",
+      "mime": "image/webp"
+    },
+    "treated": {
+      "file": "media/minhocao-treated.webp",
+      "sha256": "00827b6e69c6ea722fc15b3dd6e204a6e17e2e36826ce062da8c03d9666a35b2",
+      "bytes": 192164,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/1280px-Graffitti_no_Minhoc_C3_A3o_04",
+      "mime": "image/webp"
+    }
+  },
+  "liberdade": {
+    "original": {
+      "file": "media/liberdade-original.jpg",
+      "sha256": "f8cb2b923c3263e101158c51e3f83acd222bc53f78d80e2f15148ab6276f9634",
+      "bytes": 249982,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,w_960/1280px-Liberdade_of_Sao_Paulo",
+      "mime": "image/jpeg"
+    },
+    "card": {
+      "file": "media/liberdade-card.webp",
+      "sha256": "dcf1e09670389c57109f92b98d0fe75d903ecd8e81fcc92c3c40092ff7e8e679",
+      "bytes": 118862,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_518/1280px-Liberdade_of_Sao_Paulo",
+      "mime": "image/webp"
+    },
+    "treated": {
+      "file": "media/liberdade-treated.webp",
+      "sha256": "c94acaa7b03710ee805c12d322c7d867ae6dcf45f162c484a825511ec6be00a7",
+      "bytes": 197462,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/1280px-Liberdade_of_Sao_Paulo",
+      "mime": "image/webp"
+    }
+  },
+  "hero": {
+    "file": "media/hero.jpg",
+    "sha256": "09a79498ebfe50109822911c9ec4180b4b2dc3b8f1cac0a340cf70d14cc666cb",
+    "bytes": 484294,
+    "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_1400,h_1600/1280px-Liberdade_of_Sao_Paulo",
+    "mime": "image/jpeg"
+  },
+  "beco": {
+    "original": {
+      "file": "media/beco-original.webp",
+      "sha256": "18e4677298944c59c277cc0fceb6bc0191a32701eae28e10134bba6718f8f525",
+      "bytes": 152644,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,w_960/1280px-Beco_do_Batman_-_55334479612",
+      "mime": "image/webp"
+    },
+    "card": {
+      "file": "media/beco-card.webp",
+      "sha256": "2a229e312aed63a0efd56e88b81ebd967de16e25478e4801fd5b22868a0f7459",
+      "bytes": 102744,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_518/1280px-Beco_do_Batman_-_55334479612",
+      "mime": "image/webp"
+    },
+    "treated": {
+      "file": "media/beco-treated.webp",
+      "sha256": "5265cbf4261c85cb3141e3d8fa07b54c653f25d94c3faccfbb44025bcbc7db00",
+      "bytes": 154002,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/1280px-Beco_do_Batman_-_55334479612",
+      "mime": "image/webp"
+    }
+  },
+  "cantareira": {
+    "original": {
+      "file": "media/cantareira-original.jpg",
+      "sha256": "c715154db23cbcdd3d0c96c269d25540488fef22057ca3f4a2264e0a7f0412d9",
+      "bytes": 197010,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,w_960/1280px-Parque_Estadual_da_Cantareira_-_N_C3_BAcleo_Pedra_Grande_-_Eleessepe__2803_29",
+      "mime": "image/jpeg"
+    },
+    "card": {
+      "file": "media/cantareira-card.jpg",
+      "sha256": "388a82b88c1880e30f990f37be42b4bfda7c4fb6aad044653c0357da08af7fd2",
+      "bytes": 114889,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_518/1280px-Parque_Estadual_da_Cantareira_-_N_C3_BAcleo_Pedra_Grande_-_Eleessepe__2803_29",
+      "mime": "image/jpeg"
+    },
+    "treated": {
+      "file": "media/cantareira-treated.webp",
+      "sha256": "c2dcbca2c72702527cad17a08329cbf7d60c7383dd631b6c7548b96a124d3204",
+      "bytes": 357760,
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/1280px-Parque_Estadual_da_Cantareira_-_N_C3_BAcleo_Pedra_Grande_-_Eleessepe__2803_29",
+      "mime": "image/webp"
+    }
+  },
+  "masp": {
+    "original": {
+      "sha256": "cc373c28c39e4ab18e0ee185ca0e578f36a29eb4e8ff04b3c38f6995188017ae",
+      "bytes": 158566,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793734688/masp.jpg",
+      "file": "media/masp-original.jpg",
+      "mime": "image/jpeg"
+    },
+    "treated": {
+      "sha256": "df2d36d81cb12c8168d697ed6e5f5207aa18eba3f15b83d620d4825e8352132f",
+      "bytes": 143330,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793734688/masp.jpg",
+      "file": "media/masp-treated.jpg",
+      "mime": "image/jpeg"
+    },
+    "card": {
+      "sha256": "12261d96d043c3c3c3c52c112ca1057a1899b4d207d41412fd3350860c1d7e0c",
+      "bytes": 72487,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793734688/masp.jpg",
+      "file": "media/masp-card.jpg",
+      "mime": "image/jpeg"
+    }
+  },
+  "botanico": {
+    "original": {
+      "sha256": "b8976717c5cca428218fd5eb3e351f6e90a79852a5198287261002172d8f1d72",
+      "bytes": 180596,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793734688/botanico.jpg",
+      "file": "media/botanico-original.jpg",
+      "mime": "image/jpeg"
+    },
+    "treated": {
+      "sha256": "93fafb908074074994fea333697d383f6c2f0532d975bea9d39fe290926368f4",
+      "bytes": 133218,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793734688/botanico.jpg",
+      "file": "media/botanico-treated.jpg",
+      "mime": "image/jpeg"
+    },
+    "card": {
+      "sha256": "3b3393222f0907f1e0811f6000e13261bb602ade013b4be38b6e09d9bcadd82f",
+      "bytes": 116129,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793734688/botanico.jpg",
+      "file": "media/botanico-card.jpg",
+      "mime": "image/jpeg"
+    }
+  },
+  "luz": {
+    "original": {
+      "sha256": "e3dd7190b5d0325d395a10dc918a2c3bbdf525b1008d66ea82f0268bb0acceb7",
+      "bytes": 296832,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793734688/luz.jpg",
+      "file": "media/luz-original.jpg",
+      "mime": "image/jpeg"
+    },
+    "treated": {
+      "sha256": "aa7a4344479fd2844daaeba3de87f1aaff6a25e7f7f2307d98b0e7ed9555efcc",
+      "bytes": 131832,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793734688/luz.jpg",
+      "file": "media/luz-treated.jpg",
+      "mime": "image/jpeg"
+    },
+    "card": {
+      "sha256": "f6ce023161e5fb2001e36b5fbcf5d9436cb23276d180f04a35c197aa2ef18a14",
+      "bytes": 64833,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793734688/luz.jpg",
+      "file": "media/luz-card.jpg",
+      "mime": "image/jpeg"
+    }
+  },
+  "copan": {
+    "original": {
+      "sha256": "6287d171201269d342889af6de0bc44d61869186c13f2d09cadf5f1245d3e7a1",
+      "bytes": 421444,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793734688/copan.jpg",
+      "file": "media/copan-original.jpg",
+      "mime": "image/jpeg"
+    },
+    "treated": {
+      "sha256": "0b50ca86bd8d72cce17306d3474bed489337b55d4c3663ded99792cdb6919987",
+      "bytes": 183269,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793734688/copan.jpg",
+      "file": "media/copan-treated.jpg",
+      "mime": "image/jpeg"
+    },
+    "card": {
+      "sha256": "e7913b42d311b4cb850567c410617e059a822530bbefd9569fbbb06b33f6eb41",
+      "bytes": 99402,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793734688/copan.jpg",
+      "file": "media/copan-card.jpg",
+      "mime": "image/jpeg"
+    }
+  },
+  "paulista": {
+    "original": {
+      "sha256": "87f5842048ba4bf6b314dfcc31b2ca92f4e02531eb500d922265263d59ab196a",
+      "bytes": 398498,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793734688/paulista.jpg",
+      "file": "media/paulista-original.jpg",
+      "mime": "image/jpeg"
+    },
+    "treated": {
+      "sha256": "f11dbe2cd3712f873ef1f44b38efcefdad28a577e3bb36ae3a601304747df331",
+      "bytes": 132506,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793734688/paulista.jpg",
+      "file": "media/paulista-treated.jpg",
+      "mime": "image/jpeg"
+    },
+    "card": {
+      "sha256": "a064a9cb39a91a60cbcfed8f188052aab0ec81474d6a720f1ce02e203a20e915",
+      "bytes": 72545,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793734688/paulista.jpg",
+      "file": "media/paulista-card.jpg",
+      "mime": "image/jpeg"
+    }
+  },
+  "mercado": {
+    "original": {
+      "sha256": "ae0f084f105ee4d20f4c988cd6b9f530f6c053630c9312e14912bd53a745474d",
+      "bytes": 329308,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793734688/mercado.jpg",
+      "file": "media/mercado-original.jpg",
+      "mime": "image/jpeg"
+    },
+    "treated": {
+      "sha256": "9858db25d58bd07a1e8e9189dacfaabfa17c6a19729f29784e24b8c9c8e2c845",
+      "bytes": 228524,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793734688/mercado.jpg",
+      "file": "media/mercado-treated.jpg",
+      "mime": "image/jpeg"
+    },
+    "card": {
+      "sha256": "0c0cdb13e7633697fa85deb2258785331e57e5987c74b5d47b2acf8d08d34e90",
+      "bytes": 139163,
+      "engine": "cloudinary",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793734688/mercado.jpg",
+      "file": "media/mercado-card.jpg",
+      "mime": "image/jpeg"
+    }
+  },
+  "pizzadoce": {
+    "treated": {
+      "sha256": "a29589d6c87737c191465c6136d3cea54698e58a4b2fc56318248a189102b5fb",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793735151/pizzadoce.jpg",
+      "file": "media/pizzadoce-treated.jpg",
+      "bytes": 189673
+    },
+    "card": {
+      "sha256": "b5dea794199383e07b59f27c23d1375f3fdcb0c9359e1093ab8a1b7c6461f162",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793735151/pizzadoce.jpg",
+      "file": "media/pizzadoce-card.jpg",
+      "bytes": 118152
+    },
+    "original": {
+      "sha256": "cee7b59805c43f289cd07e1fcd477663ac3fd996c5e9860cc757ca1745422468",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793735151/pizzadoce.jpg",
+      "file": "media/pizzadoce-original.jpg",
+      "bytes": 261860
+    }
+  },
+  "parqueaugusta": {
+    "treated": {
+      "sha256": "88bc19378a3c20cad193e9609dd45de34c2a309ab8b168ff2c6edbf4d469d5d7",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793735151/parqueaugusta.jpg",
+      "file": "media/parqueaugusta-treated.jpg",
+      "bytes": 96488
+    },
+    "card": {
+      "sha256": "71761a714847042c4f5de8faac945ca19aea23d9a08b55e6378bbb3ee1c86164",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793735151/parqueaugusta.jpg",
+      "file": "media/parqueaugusta-card.jpg",
+      "bytes": 78969
+    },
+    "original": {
+      "sha256": "82ffe83da679e0c17f221fc5418a5780c9a93d8c54c58eefa53a1577a72aba4a",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793735151/parqueaugusta.jpg",
+      "file": "media/parqueaugusta-original.jpg",
+      "bytes": 115405
+    }
+  },
+  "estacaoluz": {
+    "treated": {
+      "sha256": "a37d76ca94e08ee62fdf155e9d827c261305ed74ba513ad4b35519311abdd073",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793735151/estacaoluz.jpg",
+      "file": "media/estacaoluz-treated.jpg",
+      "bytes": 169603
+    },
+    "card": {
+      "sha256": "34ea674ba2f197cc0d434b05d2929ac6f0979d8b7da325d3b74cea387ffb2b56",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793735151/estacaoluz.jpg",
+      "file": "media/estacaoluz-card.jpg",
+      "bytes": 131807
+    },
+    "original": {
+      "sha256": "11a6a033bf63d742814bf9665ed73440b81f059964c4744324e5689b492e03b7",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793735151/estacaoluz.jpg",
+      "file": "media/estacaoluz-original.jpg",
+      "bytes": 302940
+    }
+  },
+  "burlemarx": {
+    "treated": {
+      "sha256": "884cc159a263701e3b23b8d9b8cea1a08d6e358cdea20103c452470d54a46393",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793735151/burlemarx.jpg",
+      "file": "media/burlemarx-treated.jpg",
+      "bytes": 169206
+    },
+    "card": {
+      "sha256": "b414d23ad9c17d23a0b2514465d84fbdf37885d61778111e83f62b4f36866d03",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793735151/burlemarx.jpg",
+      "file": "media/burlemarx-card.jpg",
+      "bytes": 105226
+    },
+    "original": {
+      "sha256": "62a1b9ee4c3035ea63d3aee45f30d695be8e85f790bebec5ae5b37898856d848",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793735151/burlemarx.jpg",
+      "file": "media/burlemarx-original.jpg",
+      "bytes": 244920
+    }
+  },
+  "pinacoteca": {
+    "treated": {
+      "sha256": "800306ab9c5ac0d1965a21f63555201e860ebf4fbe8c0264b04ea86bcded217b",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793735151/pinacoteca.jpg",
+      "file": "media/pinacoteca-treated.jpg",
+      "bytes": 60770
+    },
+    "card": {
+      "sha256": "79420621bbec038219ba84e50572caaab9cb2293ac06e422f9b11bfe819a0041",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793735151/pinacoteca.jpg",
+      "file": "media/pinacoteca-card.jpg",
+      "bytes": 45456
+    },
+    "original": {
+      "sha256": "d8a0b683f709b3a71e3b07fa99ddb9403e5a316635b95574b0bc3f50de68427b",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793735151/pinacoteca.jpg",
+      "file": "media/pinacoteca-original.jpg",
+      "bytes": 93442
+    }
+  },
+  "pizzapaulista": {
+    "treated": {
+      "sha256": "026fcabcee68494f529159229ffe0cd795edd479d7bf22f1530c4386795007c9",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793735151/pizzapaulista.jpg",
+      "file": "media/pizzapaulista-treated.jpg",
+      "bytes": 144430
+    },
+    "card": {
+      "sha256": "007ae81f1f7d42001fff73e476f6a8a0ed5b09d9e73a06452b0a21c11182d63d",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793735151/pizzapaulista.jpg",
+      "file": "media/pizzapaulista-card.jpg",
+      "bytes": 81607
+    },
+    "original": {
+      "sha256": "88edd9168f5f598e1a9a33f089738a7164aa36434237ca0c4800bbdfbcbc8f5c",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793735151/pizzapaulista.jpg",
+      "file": "media/pizzapaulista-original.jpg",
+      "bytes": 379593
+    }
+  },
+  "becocores": {
+    "treated": {
+      "sha256": "61026462658863755220f75bd193e1c616214323e5e1991de68fd8000718fb42",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793735151/becocores.jpg",
+      "file": "media/becocores-treated.jpg",
+      "bytes": 152881
+    },
+    "card": {
+      "sha256": "7274933988561fdbe1d799d40e9c6af369e5e8319550aea2763b00162a2779ee",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793735151/becocores.jpg",
+      "file": "media/becocores-card.jpg",
+      "bytes": 102995
+    },
+    "original": {
+      "sha256": "0e28e26c0541148beb4ffe3918e53c9c89cd2605d404e99601f9ae402b9f3f81",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793735151/becocores.jpg",
+      "file": "media/becocores-original.jpg",
+      "bytes": 215275
+    }
+  },
+  "kobra": {
+    "treated": {
+      "sha256": "bd759b45acf826e6ef0d0022fb8e2642736c862eae8e66e145fc3b63282e3e9f",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_960/e_saturation:25/e_tint:12:df9a65/v1793735151/kobra.jpg",
+      "file": "media/kobra-treated.jpg",
+      "bytes": 108506
+    },
+    "card": {
+      "sha256": "bdde6942dd2b99c5637239397f88e2c37667a551a31176593504a3bdac299bb6",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,c_fill,g_auto,w_720,h_518/v1793735151/kobra.jpg",
+      "file": "media/kobra-card.jpg",
+      "bytes": 60253
+    },
+    "original": {
+      "sha256": "963aef06263edcd2aed5e614c983a2609e34fdb07c831bb0748d5b19063a951a",
+      "engine": "cloudinary",
+      "mime": "image/jpeg",
+      "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_jpg,q_auto,w_1200/v1793735151/kobra.jpg",
+      "file": "media/kobra-original.jpg",
+      "bytes": 244600
+    }
+  }
+}
