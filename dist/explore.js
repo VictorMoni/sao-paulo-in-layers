@@ -84,6 +84,11 @@ function showSelectionToast(full=false){
  selectionToastLink.textContent=t('Criar meu cartão ↗');selectionToastLink.hidden=chosen.size!==3;
  selectionToast.hidden=false;selectionToastTimer=setTimeout(hideSelectionToast,5500);
 }
-selectionToastLink.onclick=()=>{clearTimeout(selectionToastTimer);selectionToast.hidden=true;$('#message').focus({preventScroll:true})};
+selectionToastLink.onclick=e=>{
+ e.preventDefault();clearTimeout(selectionToastTimer);selectionToast.hidden=true;
+ if(location.hash!=='#postal')history.pushState(null,'','#postal');
+ $('#postal').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+ $('#message').focus({preventScroll:true});
+};
 const toggleBeforeToast=toggle;
 toggle=function(id){if(!PLACE_IDS.includes(id))return;const full=chosen.size===3&&!chosen.has(id);toggleBeforeToast(id);showSelectionToast(full)};
