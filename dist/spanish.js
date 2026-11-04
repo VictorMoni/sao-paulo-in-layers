@@ -1,4 +1,5 @@
 const spanish=Object.freeze({
+'Ver meu cartão especial ↗':'Ver mi postal especial ↗','Fechar aviso':'Cerrar aviso',
   "{count} de 3 lugares no seu cartão": "{count} de 3 lugares en tu postal",
   "3 de 3! Seu cartão está pronto para criar.": "¡3 de 3! Tu postal está lista para crear.",
   "Nenhum lugar selecionado. Escolha seus favoritos.": "Ningún lugar seleccionado. Elige tus favoritos.",

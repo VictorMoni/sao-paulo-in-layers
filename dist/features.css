@@ -41,3 +41,5 @@ html{scroll-padding-top:var(--anchor-inset)}
 
 /* Space story actions consistently, including after quiz feedback. */
 .story-actions{display:flex;flex-wrap:wrap;align-items:stretch;gap:12px;margin-top:28px}.story-actions>.button,.story-actions>.secondary-button{display:inline-flex;align-items:center;justify-content:center;flex:1 1 180px;min-height:48px;margin:0;padding:13px 18px;line-height:1.5;text-align:center;white-space:normal}@media(max-width:480px){.story-actions{flex-direction:column;gap:12px;margin-top:24px}.story-actions>.button,.story-actions>.secondary-button{flex:auto;width:100%}}
+
+.reward-toast{z-index:200;gap:12px;max-width:calc(100vw - 32px)}.reward-toast>span{font-weight:600}.reward-toast button{flex:none;display:grid;place-items:center;width:44px;height:44px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--ink);font-size:26px;cursor:pointer}@media(max-width:480px){.reward-toast{padding-right:56px}.reward-toast button{position:absolute;top:6px;right:6px}.reward-toast a{white-space:normal}}
