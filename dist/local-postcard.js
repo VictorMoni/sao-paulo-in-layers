@@ -16,16 +16,16 @@ async function composeLocalPostcard(ids,message,language){
  ctx.font='16px Arial';ctx.fillText(translate('Fontes e licenças: consulte Créditos das fotografias no app.',language),80,1465,1040);
  const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw new Error('Image unavailable');return blob;
 }
-document.addEventListener('tripchange',()=>{readyPostcard=null});document.addEventListener('messagechange',()=>{readyPostcard=null});
+document.addEventListener('tripchange',()=>{readyPostcard=null});document.addEventListener('messagechange',()=>{readyPostcard=null;$('#share-image').disabled=true;$('#postcard-next-step').textContent=t(chosen.size===3?'Tudo pronto! Baixe seu cartão para habilitar o compartilhamento.':'Escolha 3 lugares usando o + nas fotos.')});
 $('#download').onclick=async()=>{
  if(chosen.size!==3)return;if(generating){$('#status').textContent=t('Já estamos preparando seu cartão.');return}
- const key=postcardKey();if(postcardCache.has(key)){readyPostcard={key,blob:postcardCache.get(key)};downloadBlob(readyPostcard.blob);$('#status').textContent=t('Cartão criado no seu dispositivo. Nenhum pedido foi enviado ao Cloudinary.');return}
+ const key=postcardKey();if(postcardCache.has(key)){readyPostcard={key,blob:postcardCache.get(key)};downloadBlob(readyPostcard.blob);$('#share-image').disabled=false;$('#postcard-next-step').textContent='';$('#status').textContent=t('Cartão criado no seu dispositivo. Nenhum pedido foi enviado ao Cloudinary.');return}
  generating=true;$('#download').disabled=true;$('#language').disabled=true;$('#status').textContent=t('Preparando seu cartão…');
- try{const blob=await composeLocalPostcard([...chosen],$('#message').value,currentLanguage);if(postcardCache.size>=6)postcardCache.delete(postcardCache.keys().next().value);postcardCache.set(key,blob);readyPostcard={key,blob};downloadBlob(blob);$('#status').textContent=t('Cartão criado no seu dispositivo. Nenhum pedido foi enviado ao Cloudinary.')}catch{readyPostcard=null;$('#status').textContent=t('Não foi possível criar o cartão. Confira as imagens e tente novamente.')}finally{generating=false;$('#download').disabled=chosen.size!==3;$('#language').disabled=false}
+ try{const blob=await composeLocalPostcard([...chosen],$('#message').value,currentLanguage);if(postcardCache.size>=6)postcardCache.delete(postcardCache.keys().next().value);postcardCache.set(key,blob);readyPostcard={key,blob};downloadBlob(blob);$('#share-image').disabled=false;$('#postcard-next-step').textContent='';$('#status').textContent=t('Cartão criado no seu dispositivo. Nenhum pedido foi enviado ao Cloudinary.')}catch{readyPostcard=null;$('#status').textContent=t('Não foi possível criar o cartão. Confira as imagens e tente novamente.')}finally{generating=false;$('#download').disabled=chosen.size!==3;$('#language').disabled=false}
 };
 document.addEventListener('click',async e=>{
  if(!e.target.closest('#share-image'))return;if(!readyPostcard||readyPostcard.key!==postcardKey()){$('#status').textContent=t('Gere seu cartão primeiro para compartilhar a imagem.');return}
  const file=new File([readyPostcard.blob],'sao-paulo-em-camadas.png',{type:'image/png'});
- if(!navigator.canShare?.({files:[file]})){downloadBlob(readyPostcard.blob);$('#status').textContent=t('O navegador não oferece compartilhamento de arquivos. Baixei o cartão para você enviar.');return}
+ if(!navigator.canShare?.({files:[file]})){downloadBlob(readyPostcard.blob);$('#share-image').disabled=false;$('#postcard-next-step').textContent='';$('#status').textContent=t('O navegador não oferece compartilhamento de arquivos. Baixei o cartão para você enviar.');return}
  try{await navigator.share({files:[file],title:t('Seu cartão de São Paulo')})}catch(error){$('#status').textContent=t(error.name==='AbortError'?'Compartilhamento cancelado. Seu cartão continua disponível.':'Não foi possível compartilhar. Você pode baixar o cartão.')}
 });

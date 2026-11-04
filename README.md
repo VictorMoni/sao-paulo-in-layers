@@ -15,7 +15,7 @@ Built for the **Cloudinary November Mini-Hack: Celebrate Where You're From**.
 - Reveal Cloudinary's crop and color treatment in the before-and-after comparison.
 - Inspect the real transformation recipes, file formats, and prepared file sizes for every photo.
 - Answer one observation question per story; feedback and retries encourage discovery.
-- Complete the discovery passport to unlock a special postcard featuring all 20 photos.
+- Answer 8 story quizzes correctly to unlock a special postcard featuring all 20 photos. Prepare it and share its PNG through native sharing (including WhatsApp when available), or download it to send manually.
 - Export a personalized three-photo PNG or use supported native file sharing.
 
 ## How Cloudinary powers the experience
@@ -56,6 +56,7 @@ Any static HTTP server can serve the `dist/` directory. The production artifact 
 node tests/security.cjs
 node tests/journey.cjs
 node tests/discoveries.cjs
+node tests/bonus-share.cjs
 node tests/spanish.cjs
 ```
 
@@ -118,6 +119,6 @@ The opening WebP image is 246,498 bytes (49% smaller than the previous image). C
 
 1. Choose a mood, open a photo story, and answer its observation question.
 2. Personalize the three-place selection, reorder it, and open the route in Google Maps. Download the postcard as a PNG; its photo credits travel with it.
-3. Explore the before-and-after comparison and expand the Cloudinary recipes. Discover all 20 stories to unlock the special postcard.
+3. Explore the before-and-after comparison and expand the Cloudinary recipes. Answer 8 story quizzes correctly to unlock the special postcard.
 
 Languages, appearance, selected places, discoveries, and quiz answers are stored only in the current browser. Clearing site data removes them, and they do not synchronize across devices. Personal postcard messages are not saved. Shared selection links contain place IDs and language, without the personal message.
