@@ -4,7 +4,7 @@ A personal, interactive portrait of São Paulo, Brazil — told through food, st
 
 Built for the **Cloudinary November Mini-Hack: Celebrate Where You're From**.
 
-**[Live demo](https://sao-paulo-em-camadas-cris.frizzypuppy3.chatgpt.site/)** · **[Photo credits](dist/images/CREDITS.md)** · **[Cloudinary integration](CLOUDINARY.md)**
+**[Live demo on Vercel](https://sp-layers.vercel.app/)** · **[Photo credits](dist/images/CREDITS.md)** · **[Cloudinary integration](CLOUDINARY.md)**
 
 ## Explore the city
 
@@ -102,3 +102,9 @@ The names are case-sensitive. The initial versions of both branches contain the 
 Photographs belong to their credited authors. Each photograph retains its original license; crops, resizing, and color treatments are adaptations. Both postcard types include attribution. Full sources and licenses are available in [CREDITS.md](dist/images/CREDITS.md), in the app, and in the provenance records. The photographs do not represent personal statements by the project creator.
 
 Google Maps is provided by Google. The favicon is a project-specific illustration of the city's layers and skyline.
+
+## Production on Vercel
+
+Primary URL: https://sp-layers.vercel.app/
+
+The Vercel project `sp-layers` imports this GitHub repository, publishes the `Master` branch, and serves the `dist/` root directory with the Other preset. No build step or runtime secrets are required. Shared selection links use the active deployment origin. `Develop` remains the development branch.
