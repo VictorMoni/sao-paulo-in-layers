@@ -108,3 +108,8 @@ Google Maps is provided by Google. The favicon is a project-specific illustratio
 Primary URL: https://sp-layers.vercel.app/
 
 The Vercel project `sp-layers` imports this GitHub repository, publishes the `Master` branch, and serves the `dist/` root directory with the Other preset. No build step or runtime secrets are required. Shared selection links use the active deployment origin. `Develop` remains the development branch.
+
+## Performance and accessibility
+
+The opening WebP image is 246,498 bytes (49% smaller than the previous image). Comparison images load lazily, scripts are deferred, and image dimensions reserve layout space. Mobile controls have larger touch targets; keyboard users can skip to the main content and retain focus when selecting places. Reduced-motion preferences are respected. All prepared photo assets remain local to the app, so visits make no Cloudinary requests.
+

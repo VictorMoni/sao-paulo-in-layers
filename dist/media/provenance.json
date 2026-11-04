@@ -92,11 +92,11 @@
     }
   },
   "hero": {
-    "file": "media/hero.jpg",
-    "sha256": "09a79498ebfe50109822911c9ec4180b4b2dc3b8f1cac0a340cf70d14cc666cb",
-    "bytes": 484294,
-    "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_auto,q_auto,c_fill,g_auto,w_1400,h_1600/1280px-Liberdade_of_Sao_Paulo",
-    "mime": "image/jpeg"
+    "file": "media/hero.webp",
+    "sha256": "80038ffb5dbbf033c084139aa0fe6e3a28f75a97ad14f4609944ee9a8e7f4511",
+    "bytes": 246498,
+    "source": "https://res.cloudinary.com/umn5t3ix/image/upload/f_webp,q_auto,c_fill,g_auto,w_840,h_960/1280px-Liberdade_of_Sao_Paulo",
+    "mime": "image/webp"
   },
   "beco": {
     "original": {

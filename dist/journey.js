@@ -36,3 +36,6 @@ function renderBehind(){
 $('#walk-mode').onchange=renderWalk;
 $('#lab-place').addEventListener('change',renderBehind);
 const featuresBeforeJourney=renderFeatures;renderFeatures=function(){featuresBeforeJourney();renderWalk();renderBehind()};renderWalk();renderBehind();
+
+// Preserve keyboard focus when selection or route controls are rebuilt.
+const renderBeforeFocus=render;render=function(){const active=document.activeElement,kind=active?.dataset?.id?'id':active?.dataset?.move?'move':null,value=kind?active.dataset[kind]:null;renderBeforeFocus();if(kind&&value){const next=[...document.querySelectorAll('[data-'+kind+']')].find(el=>el.dataset[kind]===value);if(next&&!next.disabled)next.focus({preventScroll:true})}};

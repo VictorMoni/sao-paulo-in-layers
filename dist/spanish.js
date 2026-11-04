@@ -1,4 +1,5 @@
 const spanish=Object.freeze({
+"Pular para o conteúdo":"Saltar al contenido",
   "Uma pizza, dois encontros": "Una pizza, dos encuentros",
   "Vila Mariana · São Paulo": "Vila Mariana · São Paulo",
   "Do salgado ao doce, uma mesa para dividir.": "De lo salado a lo dulce, una mesa para compartir.",

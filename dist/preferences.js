@@ -1,4 +1,5 @@
 const english={
+'Pular para o conteúdo':'Skip to content',
 'Idioma':'Language','Aparência':'Appearance','Claro':'Light','Escuro':'Dark','São Paulo em Camadas':'São Paulo in Layers','SÃO PAULO EM CAMADAS':'SÃO PAULO IN LAYERS','Três lugares. Um pedacinho de casa.':'Three places. A little piece of home.','Fontes e licenças: consulte Créditos das fotografias no app.':'Sources and licenses: see Photo credits in the app.','Adaptações':'Adaptations',
 "Uma pizza, dois encontros":"One pizza, two encounters",
 "Vila Mariana · São Paulo":"Vila Mariana · São Paulo",
@@ -132,7 +133,7 @@ let currentLanguage='pt-BR';let currentTheme='light';
 try{currentLanguage=['pt-BR','en','es'].includes(localStorage.getItem('sp-language'))?localStorage.getItem('sp-language'):'pt-BR';const saved=localStorage.getItem('sp-theme');currentTheme=saved==='dark'||saved==='light'?saved:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{}
 function translate(value,language=currentLanguage){const dictionary=language==='en'?english:language==='es'?spanish:null;return dictionary&&Object.hasOwn(dictionary,value)?dictionary[value]:value}
 function t(value){return translate(value)}
-const staticNodes=[...document.querySelectorAll('.brand span,nav a,.intro .eyebrow,h1,.lede,.intro .button,.image-label,.stamp,.section-head .eyebrow,.section-head h2,.section-head>p,[data-filter],.note,.postal .eyebrow,.postal h2,.postal>div:first-child>p:not(#status),label[for="message"],.post-preview em,.about .eyebrow,.about h2,.about>p:last-child,summary,.config>p:not([role="status"]),#save-config,footer p,footer>a:last-child')].map(el=>({el,original:el.innerHTML}));
+const staticNodes=[...document.querySelectorAll('.skip-link,.brand span,nav a,.intro .eyebrow,h1,.lede,.intro .button,.image-label,.stamp,.section-head .eyebrow,.section-head h2,.section-head>p,[data-filter],.note,.postal .eyebrow,.postal h2,.postal>div:first-child>p:not(#status),label[for="message"],.post-preview em,.about .eyebrow,.about h2,.about>p:last-child,summary,.config>p:not([role="status"]),#save-config,footer p,footer>a:last-child')].map(el=>({el,original:el.innerHTML}));
 function applyStaticLanguage(){
  document.documentElement.lang=currentLanguage;document.title=t('São Paulo em Camadas');
  staticNodes.forEach(({el,original})=>{if(el.matches('nav a[href="#postal"]'))el.innerHTML=`${t('Meu cartão')} <span id="count">0/3</span>`;else el.innerHTML=t(original)});
