@@ -1,4 +1,6 @@
 const spanish=Object.freeze({
+"Uma cidade, muitos jeitos de se sentir em casa. Explore São Paulo e crie seu cartão-postal.":'Una ciudad, muchas formas de sentirse en casa. Explora São Paulo y crea tu propia postal.',
+'São Paulo · Brasil':'São Paulo · Brasil',
 "Pular para o conteúdo":"Saltar al contenido",
   "Uma pizza, dois encontros": "Una pizza, dos encuentros",
   "Vila Mariana · São Paulo": "Vila Mariana · São Paulo",

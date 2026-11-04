@@ -95,7 +95,7 @@ This repository uses exactly two branches:
 - **master** — published, stable source; the default branch.
 - **develop** — continued development.
 
-The names are case-sensitive. The initial versions of both branches contain the same reviewed release. The hosting service maintains its own deployment source; that internal repository is separate from this public GitHub repository.
+The names are case-sensitive. Both branches currently contain the same reviewed release. Vercel deploys production from `master`; use `develop` for future work before merging it into `master`.
 
 ## Media attribution
 
@@ -113,3 +113,11 @@ The Vercel project `sp-layers` imports this GitHub repository, publishes the `ma
 
 The opening WebP image is 246,498 bytes (49% smaller than the previous image). Comparison images load lazily, scripts are deferred, and image dimensions reserve layout space. Mobile controls have larger touch targets; keyboard users can skip to the main content and retain focus when selecting places. Reduced-motion preferences are respected. All prepared photo assets remain local to the app, so visits make no Cloudinary requests.
 
+
+## A short demo for the judges
+
+1. Choose a mood, open a photo story, and answer its observation question.
+2. Personalize the three-place selection, reorder it, and open the route in Google Maps. Download the postcard as a PNG; its photo credits travel with it.
+3. Explore the before-and-after comparison and expand the Cloudinary recipes. Discover all 20 stories to unlock the special postcard.
+
+Languages, appearance, selected places, discoveries, and quiz answers are stored only in the current browser. Clearing site data removes them, and they do not synchronize across devices. Personal postcard messages are not saved. Shared selection links contain place IDs and language, without the personal message.

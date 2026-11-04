@@ -1,4 +1,6 @@
 const english={
+"Uma cidade, muitos jeitos de se sentir em casa. Explore São Paulo e crie seu cartão-postal.":'One city, many ways to feel at home. Explore São Paulo and create your own postcard.',
+'São Paulo · Brasil':'São Paulo · Brazil',
 'Pular para o conteúdo':'Skip to content',
 'Idioma':'Language','Aparência':'Appearance','Claro':'Light','Escuro':'Dark','São Paulo em Camadas':'São Paulo in Layers','SÃO PAULO EM CAMADAS':'SÃO PAULO IN LAYERS','Três lugares. Um pedacinho de casa.':'Three places. A little piece of home.','Fontes e licenças: consulte Créditos das fotografias no app.':'Sources and licenses: see Photo credits in the app.','Adaptações':'Adaptations',
 "Uma pizza, dois encontros":"One pizza, two encounters",
@@ -135,7 +137,7 @@ function translate(value,language=currentLanguage){const dictionary=language==='
 function t(value){return translate(value)}
 const staticNodes=[...document.querySelectorAll('.skip-link,.brand span,nav a,.intro .eyebrow,h1,.lede,.intro .button,.image-label,.stamp,.section-head .eyebrow,.section-head h2,.section-head>p,[data-filter],.note,.postal .eyebrow,.postal h2,.postal>div:first-child>p:not(#status),label[for="message"],.post-preview em,.about .eyebrow,.about h2,.about>p:last-child,summary,.config>p:not([role="status"]),#save-config,footer p,footer>a:last-child')].map(el=>({el,original:el.innerHTML}));
 function applyStaticLanguage(){
- document.documentElement.lang=currentLanguage;document.title=t('São Paulo em Camadas');
+ document.documentElement.lang=currentLanguage;document.title=t('São Paulo em Camadas');document.querySelector('meta[name="description"]').content=t("Uma cidade, muitos jeitos de se sentir em casa. Explore São Paulo e crie seu cartão-postal.");
  staticNodes.forEach(({el,original})=>{if(el.matches('nav a[href="#postal"]'))el.innerHTML=`${t('Meu cartão')} <span id="count">0/3</span>`;else el.innerHTML=t(original)});
  document.querySelector('.close').setAttribute('aria-label',t('Fechar história'));document.querySelector('.filters').setAttribute('aria-label',t('Filtrar histórias'));document.querySelector('.hero-art img').alt=t('Vista urbana de São Paulo');
  document.querySelector('.coordinates').innerHTML=`23°33′ S &nbsp; 46°38′ O &nbsp; · &nbsp; ${t('BRASIL')}`;
@@ -146,7 +148,7 @@ function applyStaticLanguage(){
 }
 const preferenceBar=document.createElement('div');preferenceBar.className='preferences';preferenceBar.innerHTML='<label><span id="language-label">Idioma</span><select id="language"><option value="pt-BR" lang="pt-BR">Português (Brasil)</option><option value="en" lang="en">English</option><option value="es" lang="es">Español</option></select></label><label><span id="theme-label">Aparência</span><select id="theme"><option id="theme-light" value="light">Claro</option><option id="theme-dark" value="dark">Escuro</option></select></label>';document.querySelector('header').append(preferenceBar);
 if(initialSharedTrip)currentLanguage=initialSharedTrip.lang;
-function applyTheme(){document.documentElement.dataset.theme=currentTheme;document.querySelector('#theme').value=currentTheme}
+function applyTheme(){document.documentElement.dataset.theme=currentTheme;document.querySelector('meta[name="theme-color"]').content=currentTheme==='dark'?'#171e1a':'#f6f3eb';document.querySelector('#theme').value=currentTheme}
 applyStaticLanguage();applyTheme();document.querySelector('#message').value=t('Tem um mundo inteiro aqui.');document.querySelector('#preview-message').textContent=document.querySelector('#message').value;
 document.querySelector('#theme').onchange=e=>{currentTheme=e.target.value;applyTheme();try{localStorage.setItem('sp-theme',currentTheme)}catch{}};
 document.querySelector('#language').onchange=e=>{
