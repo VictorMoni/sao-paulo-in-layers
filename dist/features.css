@@ -20,3 +20,10 @@
 #postal .post-preview{align-self:start;transform:none;box-sizing:border-box;min-width:0}
 @media(min-width:751px){#postal .post-preview{position:sticky;top:24px}}
 @media(max-width:750px){#postal{padding-top:24px;gap:28px}}
+
+/* Consistent, understated section dividers in both themes. */
+:root{--section-divider:#254d3b33}
+html[data-theme=dark]{--section-divider:#b2d5b933}
+.discovery,.lab,.map-section,#explorar,#postal{border-top:1px solid var(--section-divider)}
+.quick-start{border-bottom-color:var(--section-divider)}
+#explorar,#postal{padding-top:clamp(32px,4vw,56px)}
