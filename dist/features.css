@@ -32,3 +32,9 @@ html[data-theme=dark]{--section-divider:#b2d5b933}
 .postcard-actions{display:flex;flex-wrap:wrap;align-items:stretch;gap:12px;margin:20px 0 16px}
 .postcard-actions>.button,.postcard-actions>.secondary-button,.postcard-actions>#reward-explore{display:inline-flex;align-items:center;justify-content:center;margin:0;min-height:48px;max-width:100%;padding:13px 20px;line-height:1.5;text-align:center;white-space:normal;box-sizing:border-box}
 @media(max-width:480px){.postcard-actions{flex-direction:column;align-items:stretch;gap:12px}.postcard-actions>.button,.postcard-actions>.secondary-button{width:100%}}
+
+/* One anchor offset for navigation links and the postcard toast. */
+:root{--anchor-inset:24px}
+html{scroll-padding-top:var(--anchor-inset)}
+#explorar,#postal,#mapa{scroll-margin-top:0;padding-top:clamp(32px,4vw,56px)}
+@media(max-width:750px){:root{--anchor-inset:16px}#explorar,#postal,#mapa{padding-top:28px}}
