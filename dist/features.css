@@ -38,3 +38,6 @@ html[data-theme=dark]{--section-divider:#b2d5b933}
 html{scroll-padding-top:var(--anchor-inset)}
 #explorar,#postal,#mapa{scroll-margin-top:0;padding-top:clamp(32px,4vw,56px)}
 @media(max-width:750px){:root{--anchor-inset:16px}#explorar,#postal,#mapa{padding-top:28px}}
+
+/* Space story actions consistently, including after quiz feedback. */
+.story-actions{display:flex;flex-wrap:wrap;align-items:stretch;gap:12px;margin-top:28px}.story-actions>.button,.story-actions>.secondary-button{display:inline-flex;align-items:center;justify-content:center;flex:1 1 180px;min-height:48px;margin:0;padding:13px 18px;line-height:1.5;text-align:center;white-space:normal}@media(max-width:480px){.story-actions{flex-direction:column;gap:12px;margin-top:24px}.story-actions>.button,.story-actions>.secondary-button{flex:auto;width:100%}}
