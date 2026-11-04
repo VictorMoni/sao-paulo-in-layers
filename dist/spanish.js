@@ -1,4 +1,8 @@
 const spanish=Object.freeze({
+  "{count} de 3 lugares no seu cartão": "{count} de 3 lugares en tu postal",
+  "3 de 3! Seu cartão está pronto para criar.": "¡3 de 3! Tu postal está lista para crear.",
+  "Nenhum lugar selecionado. Escolha seus favoritos.": "Ningún lugar seleccionado. Elige tus favoritos.",
+  "Criar meu cartão ↗": "Crear mi postal ↗",
   "Escolha 3 lugares usando o + nas fotos.": "Elige 3 lugares usando el + en las fotos.",
   "Tudo pronto! Baixe seu cartão para habilitar o compartilhamento.": "¡Todo listo! Descarga tu postal para habilitar la opción de compartir.",
   "Comece por aqui": "Empieza aquí",

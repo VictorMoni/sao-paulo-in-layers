@@ -5,6 +5,10 @@ Object.assign(english,{
 
  'Escolha 3 lugares usando o + nas fotos.':'Pick 3 places using + on the photos.',
 'Tudo pronto! Baixe seu cartão para habilitar o compartilhamento.':'Ready! Download your postcard to enable sharing.',
+'{count} de 3 lugares no seu cartão':'{count} of 3 places on your postcard',
+'3 de 3! Seu cartão está pronto para criar.':'3 of 3! Your postcard is ready to create.',
+'Nenhum lugar selecionado. Escolha seus favoritos.':'No places selected. Pick your favorites.',
+'Criar meu cartão ↗':'Create my postcard ↗',
 'Monte seu olhar':'Find your perspective','Três convites para começar':'Three invitations to begin',
  'Escolha um clima e descubra uma combinação de camadas. Você pode trocar os lugares depois.':'Pick a mood and discover a mix of layers. You can change the places afterwards.',
  'Quero desacelerar':'Slow things down','Verde, caminhada e uma pausa na cidade.':'Greenery, a walk and a city pause.',
@@ -64,3 +68,22 @@ $('#clear-discoveries').onclick=()=>{visited.clear();writeLocal('sp-discoveries'
 $('#share-trip').onclick=async()=>{if(chosen.size!==3)return;const url=new URL('/',location.origin);url.hash=new URLSearchParams({trip:[...chosen].join(','),lang:currentLanguage}).toString();try{await navigator.clipboard.writeText(url.href);$('#trip-status').textContent=t('Seleção copiada! O link leva apenas os lugares e o idioma, sem sua mensagem.')}catch{$('#trip-link').hidden=false;$('#trip-link').value=url.href;$('#trip-link').select();$('#trip-status').textContent=t('Copie o link abaixo para compartilhar sua seleção.')}};
 addEventListener('hashchange',()=>{const shared=readSharedTrip(location.hash);if(!shared)return;chosen.clear();shared.ids.forEach(id=>chosen.add(id));if(currentLanguage!==shared.lang){$('#language').value=shared.lang;$('#language').dispatchEvent(new Event('change'))}else render()});
 const originalRender=render;render=function(){originalRender();renderFeatures()};render();
+
+const selectionToast=document.createElement('div');selectionToast.className='selection-toast';selectionToast.hidden=true;
+const selectionToastMessage=document.createElement('span');selectionToastMessage.setAttribute('role','status');selectionToastMessage.setAttribute('aria-live','polite');selectionToastMessage.setAttribute('aria-atomic','true');
+const selectionToastLink=document.createElement('a');selectionToastLink.href='#postal';selectionToastLink.hidden=true;
+selectionToast.append(selectionToastMessage,selectionToastLink);document.body.append(selectionToast);
+let selectionToastTimer;
+function hideSelectionToast(){
+ if(selectionToast.contains(document.activeElement)){selectionToastTimer=setTimeout(hideSelectionToast,1500);return}
+ selectionToast.hidden=true;
+}
+function showSelectionToast(full=false){
+ clearTimeout(selectionToastTimer);
+ selectionToastMessage.textContent=full?t('Seu cartão já tem três lugares. Remova um para trocar.'):chosen.size===3?t('3 de 3! Seu cartão está pronto para criar.'):chosen.size===0?t('Nenhum lugar selecionado. Escolha seus favoritos.'):t('{count} de 3 lugares no seu cartão').replace('{count}',String(chosen.size));
+ selectionToastLink.textContent=t('Criar meu cartão ↗');selectionToastLink.hidden=chosen.size!==3;
+ selectionToast.hidden=false;selectionToastTimer=setTimeout(hideSelectionToast,5500);
+}
+selectionToastLink.onclick=()=>{clearTimeout(selectionToastTimer);selectionToast.hidden=true;$('#message').focus({preventScroll:true})};
+const toggleBeforeToast=toggle;
+toggle=function(id){if(!PLACE_IDS.includes(id))return;const full=chosen.size===3&&!chosen.has(id);toggleBeforeToast(id);showSelectionToast(full)};
