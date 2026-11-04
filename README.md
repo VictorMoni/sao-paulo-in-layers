@@ -92,8 +92,8 @@ SECURITY.md            Privacy and security notes
 
 This repository uses exactly two branches:
 
-- **Master** — published, stable source; the default branch.
-- **Develop** — continued development.
+- **master** — published, stable source; the default branch.
+- **develop** — continued development.
 
 The names are case-sensitive. The initial versions of both branches contain the same reviewed release. The hosting service maintains its own deployment source; that internal repository is separate from this public GitHub repository.
 
@@ -107,7 +107,7 @@ Google Maps is provided by Google. The favicon is a project-specific illustratio
 
 Primary URL: https://sp-layers.vercel.app/
 
-The Vercel project `sp-layers` imports this GitHub repository, publishes the `Master` branch, and serves the `dist/` root directory with the Other preset. No build step or runtime secrets are required. Shared selection links use the active deployment origin. `Develop` remains the development branch.
+The Vercel project `sp-layers` imports this GitHub repository, publishes the `master` branch, and serves the `dist/` root directory with the Other preset. No build step or runtime secrets are required. Shared selection links use the active deployment origin. `develop` remains the development branch.
 
 ## Performance and accessibility
 
